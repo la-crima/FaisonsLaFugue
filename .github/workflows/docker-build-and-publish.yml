@@ -17,7 +17,7 @@ jobs:
         run: docker build -t migsking/onion-hackaton .
 
       - name: publish to Registry
-        uses: elgohr/Publish-Docker-Github-Action@master
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: migsking/onion-hackaton
           username: ${{ secrets.DOCKER_USERNAME }}
